@@ -1,0 +1,59 @@
+<div class="profile-container shadow">
+  <div class="editButton">
+    <mat-icon class="edit-icon" (click)="editProfile(userProfile)" matTooltip="Edit Profile">edit</mat-icon>
+  </div>
+  <div class="profile-header">
+    <img src="assets/profileImages/u-p2.jpg" alt="Profile Picture" class="profile-picture shadow">
+    <div class="basic-info">
+
+      <h2>{{ userProfile.firstName }} {{ userProfile.lastName }}</h2>
+      <p>{{ userProfile.designation }}</p>
+      <p>{{ userProfile.location }}</p>
+      <div class="actions">
+        <button mat-raised-button color="primary" (click)="triggerFileInput()">Upload Resume</button>
+        <input type="file" #fileInput (change)="onFileSelected($event)" style="display: none;" accept=".pdf,.doc,.docx">
+        <button mat-raised-button (click)="downloadResume()" disabled>Download Resume</button>
+
+        <!-- Display the selected file name -->
+        <div *ngIf="selectedFileName" class="file-name">
+          {{ selectedFileName }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="profile-details">
+    <div class="section">
+      <h2>Basic Information</h2>
+      <p>Years of Experience: {{ userProfile.experience }}</p>
+      <p>Phone: {{ userProfile.phone }}</p>
+      <p>Email: <b class="email">{{ userProfile.email }}</b></p>
+      <p>Project: {{ userProfile.currentProject }}</p>
+      <p>Status: <b>{{ userProfile.status }}</b></p>
+    </div>
+
+    <div class="section">
+      <h2>Skills</h2>
+      <div *ngFor="let skill of userProfile.skills" class="skill">{{ skill }}</div>
+    </div>
+
+
+
+    <!-- <div class="section">
+        <h2>Education</h2>
+      </div>
+  
+      <div class="section">
+        <h2>Accomplishments</h2>
+      </div> -->
+
+    <div class="section">
+      <h2>Certifications</h2>
+      <div *ngFor="let cert of userProfile.certifications" class="certificate-item">
+        <!-- <h4>{{cert.title}}</h4> -
+        <p>{{cert.provider}}</p> -->
+        {{cert}}
+      </div>
+    </div>
+  </div>
+</div>

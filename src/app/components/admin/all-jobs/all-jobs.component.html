@@ -1,0 +1,68 @@
+<div *ngIf="url === '/all-jobs' || url==='/find-jobs'">
+    <div *ngFor="let job of allJobs">
+        <div class="custom-accordion">
+            <div class="custom-header" (click)="job.panelOpenState = !job.panelOpenState">
+                <mat-icon class="expansion-icon">{{job.panelOpenState ? 'remove' : 'add'}}</mat-icon>
+                <span class="header-text">{{job.designation}}</span>
+            </div>
+            <div class="custom-panel" [class.expanded]="job.panelOpenState">
+                <div class="preview-content" *ngIf="!job.panelOpenState">
+                    <div> <b>Job Description:</b> {{job.description}}</div>
+                </div>
+                <div class="full-content" *ngIf="job.panelOpenState">
+                    <div> <b>BR ID:</b> {{job.brId}}</div>
+                    <div> <b>Skills required:</b> {{job.skills}}</div>
+                    <div> <b>Experience:</b> {{job.experience}}</div>
+                    <div> <b>Location:</b> {{job.location}}</div>
+                    <div class="spoc">
+                        <b>SPOC:</b> <span class="job-spoc">{{job.spoc}}</span>
+                    </div>
+                    <div> <b>Job Description:</b> {{job.description}}</div>
+                    <button *ngIf="dbService.loggedInUserRole == 2 && !job.isApplied" (click)="applyJob(job)"
+                        class="applyBtn btn btn-primary">
+                        Apply
+                    </button>
+                    <button *ngIf="dbService.loggedInUserRole == 2 && job.isApplied"
+                        class="applyBtn btn btn-secondary" disabled>
+                        Applied
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="url === '/my-jobs'">
+    <div *ngFor="let job of myPostedJobs">
+        <div class="custom-accordion">
+            <div class="custom-header" (click)="job.panelOpenState = !job.panelOpenState">
+                <mat-icon class="expansion-icon">{{job.panelOpenState ? 'remove' : 'add'}}</mat-icon>
+                <span class="header-text">{{job.designation}}</span>
+            </div>
+            <div class="custom-panel" [class.expanded]="job.panelOpenState">
+                <div class="preview-content" *ngIf="!job.panelOpenState">
+                    <div> <b>Job Description:</b> {{job.description}}</div>
+                </div>
+                <div class="full-content" *ngIf="job.panelOpenState">
+                    <div> <b>BR ID:</b> {{job.brId}}</div>
+                    <div> <b>Skills required:</b> {{job.skills}}</div>
+                    <div> <b>Experience:</b> {{job.experience}}</div>
+                    <div> <b>Location:</b> {{job.location}}</div>
+                    <div class="spoc">
+                        <b>SPOC:</b> <span class="job-spoc">{{job.spoc}}</span>
+                    </div>
+                    <div> <b>Job Description:</b> {{job.description}}</div>
+
+                    <button *ngIf="dbService.loggedInUserRole == 1" (click)="viewApplicants(job.brId,job.spoc)" class="applyBtn btn btn-primary me-2">
+                        View Applicants
+                    </button>
+                    <button *ngIf="dbService.loggedInUserRole == 1" (click)="openEditJobForm(job)" class="applyBtn btn btn-primary">
+                        Edit Job
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 class="text-center" *ngIf="myPostedJobs.length === 0">You haven't posted any jobs yet!</h2>
+</div>

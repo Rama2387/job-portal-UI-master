@@ -1,0 +1,44 @@
+<a routerLink="/my-jobs" class="back-link">back</a>
+<h2 class="text-center">Your Applicants List</h2>
+
+<div class="card">
+    <p-table [value]="appliedJobs" [rows]="5" [rowsPerPageOptions]="[5, 10, 20]" 
+        [paginator]="true" [tableStyle]="{'min-width': '60rem'}" >
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Edit</th>
+                <th pSortableColumn="brId" style="width:20%">
+                    BR ID <p-sortIcon field="brId"></p-sortIcon>
+                </th>
+                <th pSortableColumn="empEmail" style="width:20%">
+                    Employee Email <p-sortIcon field="empEmail"></p-sortIcon>
+                </th>
+                <th pSortableColumn="poc" style="width:20%">
+                    SPOC <p-sortIcon field="poc"></p-sortIcon>
+                </th>
+                <th pSortableColumn="status" style="width:20%">
+                    Status <p-sortIcon field="status"></p-sortIcon>
+                </th>
+                <th pSortableColumn="appliedDate" style="width:20%">
+                    Applied Date <p-sortIcon field="appliedDate"></p-sortIcon>
+                </th>
+                <th>Resume</th>
+
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-job>
+            <tr>
+                <td><mat-icon>edit</mat-icon></td>
+                <td>{{ job.brId }}</td>
+                <td class="email">{{ job.empEmail }}</td>
+                <td class="email">{{ job.poc }}</td>
+                <td>{{ job.status }}</td>
+                <td>{{ job.appliedDate | date:'shortDate' }}</td>
+                <td> <button type="button" class="btn btn-success applyBtn">Download</button></td>
+
+            </tr>
+        </ng-template>
+    </p-table>
+</div>
+
+<h2 *ngIf="appliedJobs.length ==0" class="text-center">No Jobs Applied!</h2>

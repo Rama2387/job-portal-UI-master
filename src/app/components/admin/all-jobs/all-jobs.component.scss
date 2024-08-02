@@ -1,0 +1,57 @@
+.custom-header {
+    position: absolute;
+    top: -12px;
+    left: 16px;
+    display: flex;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 0 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1 !important;
+}
+
+.custom-accordion {
+    position: relative;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    // overflow: hidden;
+    margin: 16px 0;
+}
+
+
+
+.custom-header .expansion-icon {
+    margin-right: 8px;
+}
+
+.custom-header .header-text {
+    font-weight: bold;
+}
+
+.custom-panel {
+    padding: 16px;
+    padding-top: 40px;
+}
+
+.custom-panel.expanded {
+    border-top: none;
+}
+
+.preview-content {
+    color: #666;
+}
+
+.full-content {
+    color: #666;
+}
+
+.job-spoc {
+    color: blue;
+    text-decoration: underline;
+    margin-left: 5px;
+}
+.applyBtn{
+    margin-top: 10px;
+    padding: 1px 5px;
+}

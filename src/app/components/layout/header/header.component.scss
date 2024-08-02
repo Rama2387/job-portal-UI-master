@@ -1,0 +1,102 @@
+.toolbar {
+    background-color: #325f90;
+    border-radius: 10px 10px 0 0;
+    padding: 0 10px;
+}
+
+.name {
+    color: white;
+}
+
+.example-icon {
+    cursor: pointer !important;
+}
+
+.fa-bars {
+    border: none !important;
+    cursor: pointer !important;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.homeButton {
+    background-color: #72dcac;
+}
+
+.sidebar {
+    background-color: #3b9fd4;
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+mat-list-item.active {
+    background-color: #f3f6f7 !important;
+    color: black !important;
+}
+
+mat-list mat-list-item {
+    color: white;
+    border: 0.5px solid white;
+    cursor: pointer;
+}
+
+mat-list {
+    padding-top: 0;
+}
+
+i {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+    background-color: white;
+    border-bottom: 1px solid rgb(241, 233, 220);
+}
+
+.sticky {
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.option {
+    position: relative;
+}
+
+.option:hover {
+    background-color: #f0f0f0;
+}
+
+.option.active {
+    border-bottom: 2px solid #007bff;
+    color: #007bff;
+}
+
+.logo {
+    width: 100px;
+}
+
+.profile{
+    cursor: pointer;
+}
+.profile:hover{
+    background-color: rgb(201, 194, 194);
+    border-radius: 50%;
+}

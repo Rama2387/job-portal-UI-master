@@ -1,0 +1,93 @@
+<mat-nav-list class="sidebar">
+  <div>
+    <mat-list>
+      <mat-list-item [routerLink]="['/feature1/config']" routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }">
+        Configuration Management
+      </mat-list-item>
+    </mat-list>
+
+    <mat-list>
+      <mat-list-item [routerLink]="['/feature1/ci']" routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }">
+        Continuous Integration
+      </mat-list-item>
+    </mat-list>
+
+
+    <mat-list>
+      <mat-list-item [routerLink]="['/feature1/cat']" routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }">
+        Continuous Automated Testing
+      </mat-list-item>
+    </mat-list>
+    <mat-list>
+      <mat-list-item [routerLink]="['/feature1/iac']" routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }">
+        Infrastructure as code </mat-list-item>
+    </mat-list>
+
+    <mat-list>
+      <mat-list-item [routerLink]="['/feature1/cdd']" routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }">
+        Cont Delivery & Deployment
+      </mat-list-item>
+    </mat-list>
+
+    <mat-list>
+      <mat-list-item [routerLink]="['/feature1/cm']" routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }">
+        Continuous Monitoring
+      </mat-list-item>
+    </mat-list>
+
+    <mat-list>
+      <mat-list-item [routerLink]="['/feature1/cs']" routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }">
+        Continuous Security
+      </mat-list-item>
+    </mat-list>
+    <!-- <mat-list>
+      <mat-list-item [routerLink]="['/feature1/pdf-download']" routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }">
+        Download
+      </mat-list-item>
+    </mat-list> -->
+
+    <mat-list>
+      <mat-list-item [routerLink]="['/feature1/dashboard']" routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }">
+        Dashboard
+      </mat-list-item>
+    </mat-list>
+
+    <mat-list>
+      <mat-list-item [routerLink]="['/feature1/review']" routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }">
+        Review
+      </mat-list-item>
+    </mat-list>
+
+  </div>
+  <div *ngIf="isFeature2Route">
+    <mat-list>
+      <mat-list-item [routerLink]="['/feature2/challenges']" routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }">
+        Challenges
+      </mat-list-item>
+    </mat-list>
+    <mat-list>
+      <mat-list-item [routerLink]="['/feature2/enablers']" routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }">
+        Enablers
+      </mat-list-item>
+    </mat-list>
+    <mat-list>
+      <mat-list-item [routerLink]="['/feature2/dashboard']" routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }">
+        Dashboard
+      </mat-list-item>
+    </mat-list>
+
+  </div>
+</mat-nav-list>

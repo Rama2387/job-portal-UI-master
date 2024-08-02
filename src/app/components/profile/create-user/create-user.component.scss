@@ -1,0 +1,30 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-field {
+    flex: 1;
+    padding: 5px !important;
+}
+
+.skill-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+mat-icon {
+    color: #007bff;
+}
+
+mat-dialog-content {
+    padding-bottom: 20px;
+}
+h2{
+    text-align: center;
+}
+.actionButtons {
+    display: flex;
+    text-align: center;
+}

@@ -1,0 +1,147 @@
+{
+  "users": [
+    {
+      "empId": "1030917",
+      "email": "Srinivas.Kurumalla@infinite.com",
+      "password": "Sreenivas",
+      "role": "employee",
+      "id": 1
+    },
+    {
+      "empId": "1030860",
+      "email": "sriharsha.govindula@infinite.com",
+      "password": "Sreeharsha",
+      "role": "admin_hr",
+      "id": 2
+    },
+    {
+      "empId": "1032999",
+      "email": "ramadevi.balantrapu@infinite.com",
+      "password": "Ramadevi",
+      "role": "employee",
+      "id": 3
+    },
+    {
+      "empId": "1024516",
+      "email": "mahendra.arety@infinite.com",
+      "password": "Mahendra",
+      "role": "admin_hr",
+      "id": 4
+    }
+  ],
+  "jobs": [
+    {
+      "brId": "21009BR",
+      "designation": "Software Engineer",
+      "skills": "Java, Angular, MySQL, AWS",
+      "experience": 5,
+      "location": "Hyderabad",
+      "status": "true",
+      "spoc": "sriharsha.govindula@infinite.com",
+      "description": "Cyber Security (Onsite to Costa Rica after 2 Months and offshore candidate need to support as per costa Rica Time)",
+      "id": 1
+    },
+    {
+      "brId": "28409BR",
+      "designation": "Salesforce Lead ",
+      "skills": "Apex , Aura",
+      "experience": 7,
+      "location": "Any Infinite Location",
+      "status": "true",
+      "spoc": "sriharsha.govindula@infinite.com",
+      "description": "Cyber Security (Onsite to Costa Rica after 2 Months and offshore candidate need to support as per costa Rica Time)",
+      "id": 2
+    },
+    {
+      "brId": "21439BR",
+      "designation": "QA Automation Lead ",
+      "skills": "Java, Selenium, TestNG,Cucumber",
+      "experience": 8,
+      "location": "Bangalore",
+      "status": "true",
+      "spoc": "mahendra.arety@infinite.com",
+      "description": "QA Automation Lead - HealthCare Domain knowledge is must, Java and Selenium, TestNG, Cucumber / BDD framework, API / RESTAssure\n",
+      "id": 3
+    }
+  ],
+  "appliedJobs": [
+    {
+      "applicationId": "AP1001_1030917",
+      "brId": "21439BR",
+      "empEmail": "Srinivas.Kurumalla@infinite.com",
+      "status": "Applied",
+      "poc": "mahendra.arety@infinite.com",
+      "appliedDate": "2024-07-30T08:01:34.506Z",
+      "id": 1
+    },
+    {
+      "applicationId": "AP1001_1030917",
+      "brId": "21009BR",
+      "empEmail": "Srinivas.Kurumalla@infinite.com",
+      "status": "Applied",
+      "poc": "sriharsha.govindula@infinite.com",
+      "appliedDate": "2024-07-30T10:07:32.712Z",
+      "id": 2
+    },
+    {
+      "applicationId": "AP1001_1032999",
+      "brId": "28409BR",
+      "empEmail": "ramadevi.balantrapu@infinite.com",
+      "status": "Applied",
+      "poc": "sriharsha.govindula@infinite.com",
+      "appliedDate": "2024-07-30T10:38:38.843Z",
+      "id": 3
+    },
+    {
+      "applicationId": "AP1001_1030917",
+      "brId": "28409BR",
+      "empEmail": "Srinivas.Kurumalla@infinite.com",
+      "status": "Applied",
+      "poc": "sriharsha.govindula@infinite.com",
+      "appliedDate": "2024-07-30T11:01:09.035Z",
+      "id": 4
+    },
+    {
+      "applicationId": "AP1001_1030917",
+      "brId": "21009BR",
+      "empEmail": "Srinivas.Kurumalla@infinite.com",
+      "status": "Applied",
+      "poc": "sriharsha.govindula@infinite.com",
+      "appliedDate": "2024-07-30T11:01:14.392Z",
+      "id": 5
+    },
+    {
+      "applicationId": "AP1001_1030917",
+      "brId": "21439BR",
+      "empEmail": "Srinivas.Kurumalla@infinite.com",
+      "status": "Applied",
+      "poc": "mahendra.arety@infinite.com",
+      "appliedDate": "2024-07-31T12:04:27.064Z",
+      "id": 6
+    }
+  ],
+  "userProfiles": [
+    {
+      "empId": 1030917,
+      "firstName": "Srinivas",
+      "lastName": "Kurumalla",
+      "email": "Srinivas.Kurumalla@infinite.com",
+      "phone": 7893324036,
+      "designation": "Associate Software Engineer",
+      "location": "Hyderabad",
+      "experience": "1.7",
+      "status": "Corp pool",
+      "skills": [
+        "Angular",
+        ".NET Core",
+        "SQL server"
+      ],
+      "certifications": [
+        "DP - 900"
+      ],
+      "currentProject": "MCS",
+      "currentBUName": "Centene Corporation",
+      "id": 1
+    }
+  ]
+}

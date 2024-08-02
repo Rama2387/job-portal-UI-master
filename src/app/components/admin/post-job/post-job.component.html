@@ -1,0 +1,117 @@
+<!-- <div class="profile-container">
+
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+        <div class="header">
+            <button type="button" class="back-btn">Back</button>
+            <button type="submit" class="save-btn">Save Profile</button>
+        </div>
+
+        <div class="profile-header">
+            <div class="profile-picture">
+                <img src="assets/profile-picture.jpg" alt="Profile Picture">
+            </div>
+            <div class="basic-info">
+                <h2>
+                    <input formControlName="name" placeholder="Name">
+                </h2>
+                <p>
+                    <input formControlName="title" placeholder="Title">
+                </p>
+                <p class="location">
+                    <input formControlName="location" placeholder="Location">
+                </p>
+            </div>
+        </div>
+
+        <div class="profile-details">
+            <div class="section">
+                <h3>Basic Information</h3>
+                <div class="info-row">
+                    <span>Age:</span>
+                    <input formControlName="age" type="number">
+                </div>
+                <div class="info-row">
+                    <span>Experience:</span>
+                    <input formControlName="experience" type="number">
+                </div>
+                <div class="info-row">
+                    <span>CTC:</span>
+                    <input formControlName="ctc">
+                </div>
+                <div class="info-row">
+                    <span>Phone:</span>
+                    <input formControlName="phone">
+                </div>
+                <div class="info-row">
+                    <span>Email:</span>
+                    <input formControlName="email">
+                </div>
+            </div>
+
+
+
+            <button type="button" (click)="addCertification()">Add Certification</button>
+        </div>
+
+        <div class="section">
+            <h3>Add Notes</h3>
+            <textarea placeholder="Add notes for future reference"></textarea>
+            <button>Add Note</button>
+        </div>
+
+    </form>
+</div> -->
+<div mat-dialog-title>
+    <h2>Post a job</h2>
+</div>
+
+<div mat-dialog-content>
+    <form [formGroup]="jobForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+            <!-- <mat-form-field appearance="outline" class="form-field">
+                <mat-label>BR Id</mat-label>
+                <input type="text" matInput formControlName="brId" placeholder="21009BR">
+            </mat-form-field> -->
+            <mat-form-field appearance="outline" class="form-field">
+                <mat-label>Designation</mat-label>
+                <input type="text" matInput formControlName="designation" placeholder="Software Engineer">
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="form-field">
+                <mat-label>Experience</mat-label>
+                <input type="text" matInput formControlName="experience" placeholder="4">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline" class="form-field">
+                <mat-label>Skills required</mat-label>
+                <input type="text" matInput formControlName="skills"
+                    placeholder="Enter requires skills with comma [,] separated...">
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="form-field">
+                <mat-label>Location</mat-label>
+                <input type="text" matInput formControlName="location">
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="form-field">
+                <mat-label>Status</mat-label>
+                <input type="text" matInput formControlName="status" placeholder="Ready to move">
+            </mat-form-field>
+
+        </div>
+
+       
+        <div class="row">
+            <mat-form-field appearance="outline" class="form-field">
+                <mat-label>Description</mat-label>
+                <textarea matInput id="jobDescription" formControlName="description" name="jobDescription" rows="4"
+                    cols="50" placeholder="Enter job description here..."></textarea>
+            </mat-form-field>
+
+
+        </div>
+
+        <div mat-dialog-actions class="actionButtons">
+            <button mat-raised-button type="button" [matDialogClose]="false" class="me-2">Cancel</button>
+            <button  mat-raised-button color="primary" type="submit">{{data ? 'Update' : 'Save'}}</button>
+        </div>
+    </form>
+</div>

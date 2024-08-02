@@ -1,0 +1,23 @@
+<table class="table table-bordered border-primary" *ngIf="myAppliedJobs.length > 0">
+    <thead>
+        <tr>
+            <th>Application Id</th>
+            <th>BR Id</th>
+            <th>Employee Email</th>
+            <th>SPOC Email</th>
+            <th>Applied Date</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let appliedJob of myAppliedJobs">
+        <tr>
+            <td>{{appliedJob.applicationId}}</td>
+            <td>{{appliedJob.brId}}</td>
+            <td class="email">{{appliedJob.empEmail}}</td>
+            <td class="email">{{appliedJob.poc}}</td>
+            <td>{{appliedJob.appliedDate | date}}</td>
+            <td>{{appliedJob.status}}</td>
+        </tr>
+    </tbody>
+</table>
+<h2 *ngIf="myAppliedJobs.length ==0" class="text-center">No Jobs Applied!</h2>

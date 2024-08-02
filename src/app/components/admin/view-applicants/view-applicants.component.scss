@@ -1,0 +1,54 @@
+.email{
+    text-decoration: underline;
+    color: blue;
+}
+.applyBtn{
+    padding: 1px 5px;
+
+}
+.header{
+    background-color: rgb(173, 168, 168);
+}
+::ng-deep .p-paginator {
+    font-size: 0.75rem; /* Adjust the font size */
+}
+
+::ng-deep .p-paginator .p-paginator-pages .p-paginator-page,
+::ng-deep .p-paginator .p-paginator-next,
+::ng-deep .p-paginator .p-paginator-prev,
+::ng-deep .p-paginator .p-paginator-first,
+::ng-deep .p-paginator .p-paginator-last {
+    height: 30px; /* Adjust the height */
+    width: 30px; /* Adjust the width */
+    line-height: 30px; /* Adjust the line height */
+    margin: 0 2px; /* Adjust the margin */
+    font-size: 0.75rem; /* Adjust the font size */
+}
+
+::ng-deep .p-paginator .p-dropdown {
+    height: 30px; /* Adjust the height */
+    font-size: 0.75rem; /* Adjust the font size */
+}
+
+::ng-deep .p-paginator .p-dropdown .p-dropdown-label {
+    padding-right: 0;
+    padding-top: 4px;
+}
+
+/* In your component's CSS or SCSS file */
+.back-link {
+    color: #007bff; /* Change to your preferred color */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Adjust font size */
+    padding: 10px; /* Add padding */
+    border: 1px solid #007bff; /* Border color matching text color */
+    border-radius: 4px; /* Rounded corners */
+    display: inline-block; /* Ensures padding and border are applied correctly */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .back-link:hover {
+    background-color: #007bff; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+  }
+  

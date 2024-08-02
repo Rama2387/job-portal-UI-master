@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+
+// html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+  }
+  
+  .sticky {
+    box-shadow: 0 4px 2px -2px gray;
+  }
+  
+  .spacer {
+    flex: 1 1 auto;
+  }
+  
+  main {
+    margin-top: 40px; /* Height of the navbar */
+    padding: 16px;
+    height: calc(100vh - 40px); /* Full height minus navbar height */
+    overflow-y: auto; /* Enables scrolling */
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  

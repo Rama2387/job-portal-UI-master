@@ -1,0 +1,11 @@
+<app-header (sidebarToggle)="toggleSidebar()"></app-header>
+
+<div class="app-container">
+  <!-- <div class="sidebar element-with-shadow" [class.open]="_dbService.isSidebarOpen">
+    <app-sidebar></app-sidebar>
+  </div> -->
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+<p-toast></p-toast>
